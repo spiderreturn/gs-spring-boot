@@ -12,7 +12,7 @@ pool:
 steps:
 - task: Maven@3
   inputs:
-    mavenPomFile: '$(Parameters.mavenPOMFile)'
+    mavenPomFile: 'app/pom.xml'
     codeCoverageToolOption: Cobertura
     
 - task: CopyFiles@2
